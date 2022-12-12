@@ -1,0 +1,226 @@
+:root {
+    --body-color: rgb(116, 223, 223);
+    --first-color: rgb(43, 41, 41);
+    --second-color: white;
+    --blue: #007bff;
+    --green: rgb(48, 180, 48);
+    --special-color: rgb(48, 180, 48);
+    --font1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font2: sans-serif;
+}
+
+.dark {
+    --first-color: white;
+    --second-color: rgb(43, 41, 41);
+    --special-color: aqua;
+    --blue: rgb(48, 180, 48);
+    --green: #007bff;
+    --body-color: rgb(40, 97, 97);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+nav {
+    position: absolute;
+    margin: 0 20% 0 20%;
+    width: 60%;
+    height: 10vh;
+    display: inline-flex;
+    background-color: var(--second-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#nav-p {
+    margin: 2vh 0 0 1vw;
+    width: 100%;
+    height: auto;
+    font-family: var(--font1);
+    color: var(--first-color);
+}
+#nav-p a {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+#qz-icon {
+    margin: 3vh 2vw 2vh 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.qz-main-container {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    width: 60vw;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: var(--second-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#qz-main-id {
+    display: block;
+}
+
+.qz-main-container .qz-main-title {
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid var(--first-color);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font2);
+}
+
+.qz-main-container .qz-main-title span {
+    padding-left: 30%;
+    padding-right: 30%;
+    color: var(--first-color);
+    text-align: center;
+}
+
+.qz-main-container .qz-main-article {
+    padding: 35px 100px 15px 100px;
+    color: var(--first-color);
+}
+
+.qz-main-container .qz-main-article .qz-main {
+    margin: 25px;
+    font-size: 17px;
+    font-family: var(--font2);
+    text-align: center;
+}
+
+.qz-main-container .qz-main-article .qz-main span {
+    font-weight: 600;
+    color: var(--special-color);
+    line-height: 25px;
+}
+
+.qz-main-container .qz-button {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid var(--first-color);
+}
+
+.qz-main-container .qz-button button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.qz-quit {
+    color: var(--blue);
+    background: var(--second-color);
+    border: 1px solid var(--blue);
+}
+
+.qz-start {
+    color: var(--second-color);
+    background: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.qz-quit:hover {
+    color: var(--second-color);
+    background: var(--green);
+    border-color: var(--green);
+}
+
+.qz-start:hover {
+    background: var(--green);
+    border-color: var(--green);
+}
+
+.qz-container {
+    position: absolute;
+    top: 55%;
+    left: 51%;
+    width: 60vw;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background-color: var(--second-color);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: var(--font2);
+}
+
+#qz-id {
+    display: none;
+}
+
+.qn-text {
+    padding: 4rem;
+}
+
+h1 {
+    padding: 3vmax;
+    text-align: center;
+    margin: 0;
+    color: var(--first-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 0 2vh 0;
+}
+
+ul li {
+    font-size: 25px;
+    margin: 5vh 0 5vh 5vh;
+}
+
+ul li label {
+    cursor: pointer;
+    color: var(--first-color);
+}
+
+.qn-bottom {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid var(--first-color);
+}
+
+.qn-bottom button {
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--font1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    color: var(--second-color);
+}
+
+.qn-bottom button:hover {
+    background-color: var(--green);
+}
